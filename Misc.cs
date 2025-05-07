@@ -5,8 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 using TopicBites;
 
-namespace TopicBites
+namespace TopicBites.Misc
 {
+    public enum NounAttribute
+    {
+        Singular,
+        Plural
+    }
+
     public class StudyMethodResource {
         public string Id { get; set; } = String.Empty;
         public StudyMethodResouceDifficulty Difficulty { get; set; } = StudyMethodResouceDifficulty.Beginner;
@@ -28,7 +34,7 @@ namespace TopicBites
     }
     public class StudyMethodStadistics
     {
-        public string Id { get; set; }
+        public string Id { get; set; } = String.Empty;
         public Dictionary<DateTime, StudyMethodStadisticsMetadata> Tries { get; set; } = new Dictionary<DateTime, StudyMethodStadisticsMetadata>();
         public int CorrectAnswers { get; } 
         public int IncorrectAnswers { get; } 
@@ -50,7 +56,6 @@ namespace TopicBites
         }
     }
     public class QuizQuestion : StudyMethodResource {
-        public string Id { get; set; } = String.Empty;
         public string Question { get; set; } = String.Empty;
         public List<string> Answers { get; set; } = new List<string>();
         public int CorrectAnswerIndex { get; set; } = 0;

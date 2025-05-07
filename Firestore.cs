@@ -10,6 +10,7 @@ using static Google.Cloud.Firestore.V1.StructuredQuery.Types;
 
 namespace TopicBites
 {
+    /*
     public class FirestoreTranslator
     {
         static private Dictionary<string, object>? ReplaceReferenceTags(Dictionary<string, object> Input)
@@ -114,5 +115,6 @@ namespace TopicBites
             }
         }
     }
+    */
 
 }

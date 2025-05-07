@@ -8,7 +8,7 @@ namespace TopicBites
 {
     public class Resource
     {
-        public string Id { get; set; }
+        public string Id { get; set; } = String.Empty;
 
         public Resource() { }
         public Resource(string id)
@@ -30,12 +30,13 @@ namespace TopicBites
 
     public class PointerResource : Resource
     {
-        public string PointedImageResource { get; set; }
-        public double X { get; set; }
-        public double Y { get; set; }
-        
+        public string PointedImageResource { get; set; } = String.Empty;
+        public double X { get; set; } = 0.0;
+        public double Y { get; set; } = 0.0;
+
         public PointerResource(double x, double y)
         {
+
             X = x;
             Y = y;
         }

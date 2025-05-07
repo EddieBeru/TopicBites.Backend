@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TopicBites.Misc;
 
 namespace TopicBites
 {
     public class StudyMethod
     {
+        protected StudyMethodStadistics Statistics { get; set; } = new StudyMethodStadistics();
         public StudyMethod() { }
     }
 
