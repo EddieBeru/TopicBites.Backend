@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Net.Sockets;
 using System.Text;
@@ -45,6 +46,7 @@ namespace TopicBites
             this.Description = Description;
             ChangeLog.Add(DateTime.Now, Author);
         }
+        //Copy from another topic
         public StudyTopic(StudyTopic From)
         {
             if (From == null)
@@ -72,7 +74,13 @@ namespace TopicBites
             NewSubTopic.Parent = this;
             SubTopics.Add(NewSubTopic);
         }
+        //Returns Collection for UI Elements
+        public ObservableCollection<StudyTopic> GetSubTopics()
+        {
+            return new ObservableCollection<StudyTopic>(SubTopics);
+        }
 
+        //Return specific subtopic
         public StudyTopic GetSubTopic(int index)
         {
             if (index < 0 || index >= SubTopics.Count)
