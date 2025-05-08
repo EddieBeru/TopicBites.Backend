@@ -23,10 +23,10 @@ namespace TopicBites
         public bool IsRoot { get { return Parent == null; } }
 
         //More techy attributes
-        protected Dictionary<DateTime, string> ChangeLog { get; set; } = new Dictionary<DateTime, string>();
-        protected List<Resource> Resources { get; set; } = new List<Resource>();
-        protected List<StudyTopic> SubTopics { get; set; } = new List<StudyTopic>();
-        protected List<StudyMethod> Methods { get; set; } = new List<StudyMethod>();
+        public Dictionary<DateTime, string> ChangeLog { get; set; } = new Dictionary<DateTime, string>();
+        public List<Resource> Resources { get; protected set; } = new List<Resource>();
+        public List<StudyTopic> SubTopics { get; protected set; } = new List<StudyTopic>();
+        public List<StudyMethod> Methods { get; protected set; } = new List<StudyMethod>();
 
         //Temporal
         public Uri MainIcon { get; set; } = new Uri("https://media.istockphoto.com/id/471625472/photo/3d-man-standing-and-having-no-idea.jpg?s=612x612&w=0&k=20&c=Q47xX_LinTdMJ1r1EAyzVZ5rjvcjdSwOAe-xlfl_t9o=");
@@ -80,13 +80,6 @@ namespace TopicBites
             return new ObservableCollection<StudyTopic>(SubTopics);
         }
 
-        //Return specific subtopic
-        public StudyTopic GetSubTopic(int index)
-        {
-            if (index < 0 || index >= SubTopics.Count)
-                throw new IndexOutOfRangeException("Index out of range");
-            return SubTopics[index];
-        }
 
         public int GetSubTopicCount() { return SubTopics.Count; }
         //Returns the root topic of the whole tree
