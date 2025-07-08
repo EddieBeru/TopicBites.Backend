@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,44 +11,53 @@ namespace TopicBites.Model
 {
     public class Tree
     {
-        public int ItemId { get; }
-        public Tree? Parent { get; private set; }
-        private readonly List<Tree> _children = new();
-        public IReadOnlyList<Tree> Children => _children.AsReadOnly();
-        public StudyTopic? Item => GetItem();
+        public int ParentId { get; set; } 
+        public int ItemId { get; set; }
+        public List<Tree> Children { get; set; } = new List<Tree>();
 
+        //Json Serialization Properties
+        [JsonIgnore]
+        public StudyTopic? Item => GetItem();
+        [JsonIgnore]
+        public Tree? Parent => GetParent();
+        [JsonConstructor]
+        internal Tree(int ParentId, int ItemId, List<Tree> Children)
+        {
+            this.ParentId = ParentId;
+            this.ItemId = ItemId;
+            this.Children = Children;
+        }
+        public Tree(int itemId, int parentId = -1)
+        {
+            ItemId = itemId;
+            ParentId = parentId;
+        }
         public Tree(int itemId, Tree? parent = null)
         {
             ItemId = itemId;
-            Parent = parent;
+            ParentId = parent == null ? -1 : parent.ItemId;
         }
-
         public void AddChild(Tree child)
         {
-            child.Parent = this;
-            _children.Add(child);
+            child.ParentId = this.ItemId;
+            Children.Add(child);
         }
-
         public void RemoveChild(int id)
         {
-            _children.RemoveAll(c => c.ItemId == id);
+            Children.RemoveAll(c => c.ItemId == id);
         }
-
         public Tree? LookForStudyTopic(int id)
         {
             if (ItemId == id) return this;
-            foreach (var child in _children)
+            foreach (var child in Children)
             {
                 var found = child.LookForStudyTopic(id);
                 if (found != null) return found;
             }
             return null;
         }
-
         public Tree? NavigateUp() => Parent;
-
-        public Tree? NavigateDown(int id) => _children.FirstOrDefault(c => c.ItemId == id);
-
+        public Tree? NavigateDown(int id) => Children.FirstOrDefault(c => c.ItemId == id);
         public Tree? NavigateToAddress(string address)
         {
             if (string.IsNullOrEmpty(address)) return this;
@@ -61,9 +71,8 @@ namespace TopicBites.Model
             }
             return current;
         }
-
         public StudyTopic? GetItem() => DataBase.GetInstance().Value.GetStudyTopicById(ItemId);
-
+        public Tree? GetParent() => DataBase.GetInstance().Value.GetTree(ParentId);
         public string GetAddress()
         {
             return (Parent == null || Parent.ItemId == -1) ? $"{ItemId}" : $"{Parent.GetAddress()}/{ItemId}";

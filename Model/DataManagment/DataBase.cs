@@ -9,7 +9,7 @@ namespace TopicBites.Model.DataManagment
     public class DataBase
     {
         private List<StudyTopic> StudyTopics { get; set; } = new List<StudyTopic>();
-        private Tree MainTree { get; set; } = new Tree(-1); // Root node with itemId -1
+        private Tree MainTree { get; set; } = new Tree(-1, -1); // Root node with itemId -1
 
         private static readonly Lazy<DataBase> _lazyInstance = new Lazy<DataBase>(() => new DataBase());
         private DataBase()
@@ -19,6 +19,11 @@ namespace TopicBites.Model.DataManagment
         public static Lazy<DataBase> GetInstance()
         {
             return _lazyInstance;
+        }
+        public void Configure(Tree newTree, List<StudyTopic> topics)
+        {
+            MainTree = newTree;
+            StudyTopics = topics;
         }
         public void AddStudyTopic(StudyTopic topic, string address)
         {
@@ -43,7 +48,7 @@ namespace TopicBites.Model.DataManagment
             var topic = MainTree.LookForStudyTopic(topicId);
             if (topic != null)
             {
-                Tree childTree = new Tree(childId);
+                Tree childTree = new Tree(childId, topic);
                 topic.AddChild(childTree);
             }
         }
@@ -51,13 +56,17 @@ namespace TopicBites.Model.DataManagment
         {
             return MainTree.LookForStudyTopic(id);
         }
-        public Tree? GetMainTree()
+        public Tree GetMainTree()
         {
             return MainTree;
         }
         public StudyTopic? GetStudyTopicById(int id)
         {
             return StudyTopics.FirstOrDefault(t => t.Id == id);
+        }
+        public List<StudyTopic> GetAllStudyTopics()
+        {
+            return StudyTopics;
         }
         public string GetAddressOfTopic(StudyTopic topic)
         {
