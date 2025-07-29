@@ -1,0 +1,1122 @@
+### YamlMime:ManagedReference
+items:
+- uid: TopicBites.Model.Tree
+  commentId: T:TopicBites.Model.Tree
+  id: Tree
+  parent: TopicBites.Model
+  children:
+  - TopicBites.Model.Tree.#ctor(System.Int32,System.Int32)
+  - TopicBites.Model.Tree.#ctor(System.Int32,TopicBites.Model.Tree)
+  - TopicBites.Model.Tree.AddChild(TopicBites.Model.Tree)
+  - TopicBites.Model.Tree.AssignDatabaseInstance(TopicBites.Model.DataManagment.Database)
+  - TopicBites.Model.Tree.Children
+  - TopicBites.Model.Tree.GetAddress
+  - TopicBites.Model.Tree.GetItem
+  - TopicBites.Model.Tree.GetParent
+  - TopicBites.Model.Tree.Item
+  - TopicBites.Model.Tree.ItemId
+  - TopicBites.Model.Tree.LookForStudyTopic(System.Int32)
+  - TopicBites.Model.Tree.NavigateDown(System.Int32)
+  - TopicBites.Model.Tree.NavigateToAddress(System.String)
+  - TopicBites.Model.Tree.NavigateUp
+  - TopicBites.Model.Tree.Parent
+  - TopicBites.Model.Tree.ParentId
+  - TopicBites.Model.Tree.RemoveChild(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: Tree
+  nameWithType: Tree
+  fullName: TopicBites.Model.Tree
+  type: Class
+  source:
+    remote:
+      path: Model/Tree.cs
+      branch: MakeItWork
+      repo: https://github.com/EddieBeru/TopicBites.Backend.git
+    id: Tree
+    path: ../Model/Tree.cs
+    startLine: 12
+  assemblies:
+  - TopicBites
+  namespace: TopicBites.Model
+  syntax:
+    content: public class Tree
+    content.vb: Public Class Tree
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: TopicBites.Model.Tree.ParentId
+  commentId: P:TopicBites.Model.Tree.ParentId
+  id: ParentId
+  parent: TopicBites.Model.Tree
+  langs:
+  - csharp
+  - vb
+  name: ParentId
+  nameWithType: Tree.ParentId
+  fullName: TopicBites.Model.Tree.ParentId
+  type: Property
+  source:
+    remote:
+      path: Model/Tree.cs
+      branch: MakeItWork
+      repo: https://github.com/EddieBeru/TopicBites.Backend.git
+    id: ParentId
+    path: ../Model/Tree.cs
+    startLine: 14
+  assemblies:
+  - TopicBites
+  namespace: TopicBites.Model
+  syntax:
+    content: public int ParentId { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property ParentId As Integer
+  overload: TopicBites.Model.Tree.ParentId*
+- uid: TopicBites.Model.Tree.ItemId
+  commentId: P:TopicBites.Model.Tree.ItemId
+  id: ItemId
+  parent: TopicBites.Model.Tree
+  langs:
+  - csharp
+  - vb
+  name: ItemId
+  nameWithType: Tree.ItemId
+  fullName: TopicBites.Model.Tree.ItemId
+  type: Property
+  source:
+    remote:
+      path: Model/Tree.cs
+      branch: MakeItWork
+      repo: https://github.com/EddieBeru/TopicBites.Backend.git
+    id: ItemId
+    path: ../Model/Tree.cs
+    startLine: 15
+  assemblies:
+  - TopicBites
+  namespace: TopicBites.Model
+  syntax:
+    content: public int ItemId { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property ItemId As Integer
+  overload: TopicBites.Model.Tree.ItemId*
+- uid: TopicBites.Model.Tree.Children
+  commentId: P:TopicBites.Model.Tree.Children
+  id: Children
+  parent: TopicBites.Model.Tree
+  langs:
+  - csharp
+  - vb
+  name: Children
+  nameWithType: Tree.Children
+  fullName: TopicBites.Model.Tree.Children
+  type: Property
+  source:
+    remote:
+      path: Model/Tree.cs
+      branch: MakeItWork
+      repo: https://github.com/EddieBeru/TopicBites.Backend.git
+    id: Children
+    path: ../Model/Tree.cs
+    startLine: 16
+  assemblies:
+  - TopicBites
+  namespace: TopicBites.Model
+  syntax:
+    content: public List<Tree> Children { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{TopicBites.Model.Tree}
+    content.vb: Public Property Children As List(Of Tree)
+  overload: TopicBites.Model.Tree.Children*
+- uid: TopicBites.Model.Tree.Item
+  commentId: P:TopicBites.Model.Tree.Item
+  id: Item
+  parent: TopicBites.Model.Tree
+  langs:
+  - csharp
+  - vb
+  name: Item
+  nameWithType: Tree.Item
+  fullName: TopicBites.Model.Tree.Item
+  type: Property
+  source:
+    remote:
+      path: Model/Tree.cs
+      branch: MakeItWork
+      repo: https://github.com/EddieBeru/TopicBites.Backend.git
+    id: Item
+    path: ../Model/Tree.cs
+    startLine: 19
+  assemblies:
+  - TopicBites
+  namespace: TopicBites.Model
+  syntax:
+    content: >-
+      [JsonIgnore]
+
+      public StudyTopic? Item { get; }
+    parameters: []
+    return:
+      type: TopicBites.Model.StudyTopic
+    content.vb: >-
+      <JsonIgnore>
+
+      Public ReadOnly Property Item As StudyTopic
+  overload: TopicBites.Model.Tree.Item*
+  attributes:
+  - type: Newtonsoft.Json.JsonIgnoreAttribute
+    ctor: Newtonsoft.Json.JsonIgnoreAttribute.#ctor
+    arguments: []
+- uid: TopicBites.Model.Tree.Parent
+  commentId: P:TopicBites.Model.Tree.Parent
+  id: Parent
+  parent: TopicBites.Model.Tree
+  langs:
+  - csharp
+  - vb
+  name: Parent
+  nameWithType: Tree.Parent
+  fullName: TopicBites.Model.Tree.Parent
+  type: Property
+  source:
+    remote:
+      path: Model/Tree.cs
+      branch: MakeItWork
+      repo: https://github.com/EddieBeru/TopicBites.Backend.git
+    id: Parent
+    path: ../Model/Tree.cs
+    startLine: 21
+  assemblies:
+  - TopicBites
+  namespace: TopicBites.Model
+  syntax:
+    content: >-
+      [JsonIgnore]
+
+      public Tree? Parent { get; }
+    parameters: []
+    return:
+      type: TopicBites.Model.Tree
+    content.vb: >-
+      <JsonIgnore>
+
+      Public ReadOnly Property Parent As Tree
+  overload: TopicBites.Model.Tree.Parent*
+  attributes:
+  - type: Newtonsoft.Json.JsonIgnoreAttribute
+    ctor: Newtonsoft.Json.JsonIgnoreAttribute.#ctor
+    arguments: []
+- uid: TopicBites.Model.Tree.#ctor(System.Int32,System.Int32)
+  commentId: M:TopicBites.Model.Tree.#ctor(System.Int32,System.Int32)
+  id: '#ctor(System.Int32,System.Int32)'
+  parent: TopicBites.Model.Tree
+  langs:
+  - csharp
+  - vb
+  name: Tree(int, int)
+  nameWithType: Tree.Tree(int, int)
+  fullName: TopicBites.Model.Tree.Tree(int, int)
+  type: Constructor
+  source:
+    remote:
+      path: Model/Tree.cs
+      branch: MakeItWork
+      repo: https://github.com/EddieBeru/TopicBites.Backend.git
+    id: .ctor
+    path: ../Model/Tree.cs
+    startLine: 32
+  assemblies:
+  - TopicBites
+  namespace: TopicBites.Model
+  syntax:
+    content: public Tree(int itemId, int parentId = -1)
+    parameters:
+    - id: itemId
+      type: System.Int32
+    - id: parentId
+      type: System.Int32
+    content.vb: Public Sub New(itemId As Integer, parentId As Integer = -1)
+  overload: TopicBites.Model.Tree.#ctor*
+  nameWithType.vb: Tree.New(Integer, Integer)
+  fullName.vb: TopicBites.Model.Tree.New(Integer, Integer)
+  name.vb: New(Integer, Integer)
+- uid: TopicBites.Model.Tree.#ctor(System.Int32,TopicBites.Model.Tree)
+  commentId: M:TopicBites.Model.Tree.#ctor(System.Int32,TopicBites.Model.Tree)
+  id: '#ctor(System.Int32,TopicBites.Model.Tree)'
+  parent: TopicBites.Model.Tree
+  langs:
+  - csharp
+  - vb
+  name: Tree(int, Tree?)
+  nameWithType: Tree.Tree(int, Tree?)
+  fullName: TopicBites.Model.Tree.Tree(int, TopicBites.Model.Tree?)
+  type: Constructor
+  source:
+    remote:
+      path: Model/Tree.cs
+      branch: MakeItWork
+      repo: https://github.com/EddieBeru/TopicBites.Backend.git
+    id: .ctor
+    path: ../Model/Tree.cs
+    startLine: 37
+  assemblies:
+  - TopicBites
+  namespace: TopicBites.Model
+  syntax:
+    content: public Tree(int itemId, Tree? parent = null)
+    parameters:
+    - id: itemId
+      type: System.Int32
+    - id: parent
+      type: TopicBites.Model.Tree
+    content.vb: Public Sub New(itemId As Integer, parent As Tree = Nothing)
+  overload: TopicBites.Model.Tree.#ctor*
+  nameWithType.vb: Tree.New(Integer, Tree)
+  fullName.vb: TopicBites.Model.Tree.New(Integer, TopicBites.Model.Tree)
+  name.vb: New(Integer, Tree)
+- uid: TopicBites.Model.Tree.AddChild(TopicBites.Model.Tree)
+  commentId: M:TopicBites.Model.Tree.AddChild(TopicBites.Model.Tree)
+  id: AddChild(TopicBites.Model.Tree)
+  parent: TopicBites.Model.Tree
+  langs:
+  - csharp
+  - vb
+  name: AddChild(Tree)
+  nameWithType: Tree.AddChild(Tree)
+  fullName: TopicBites.Model.Tree.AddChild(TopicBites.Model.Tree)
+  type: Method
+  source:
+    remote:
+      path: Model/Tree.cs
+      branch: MakeItWork
+      repo: https://github.com/EddieBeru/TopicBites.Backend.git
+    id: AddChild
+    path: ../Model/Tree.cs
+    startLine: 42
+  assemblies:
+  - TopicBites
+  namespace: TopicBites.Model
+  syntax:
+    content: public void AddChild(Tree child)
+    parameters:
+    - id: child
+      type: TopicBites.Model.Tree
+    content.vb: Public Sub AddChild(child As Tree)
+  overload: TopicBites.Model.Tree.AddChild*
+- uid: TopicBites.Model.Tree.RemoveChild(System.Int32)
+  commentId: M:TopicBites.Model.Tree.RemoveChild(System.Int32)
+  id: RemoveChild(System.Int32)
+  parent: TopicBites.Model.Tree
+  langs:
+  - csharp
+  - vb
+  name: RemoveChild(int)
+  nameWithType: Tree.RemoveChild(int)
+  fullName: TopicBites.Model.Tree.RemoveChild(int)
+  type: Method
+  source:
+    remote:
+      path: Model/Tree.cs
+      branch: MakeItWork
+      repo: https://github.com/EddieBeru/TopicBites.Backend.git
+    id: RemoveChild
+    path: ../Model/Tree.cs
+    startLine: 47
+  assemblies:
+  - TopicBites
+  namespace: TopicBites.Model
+  syntax:
+    content: public void RemoveChild(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    content.vb: Public Sub RemoveChild(id As Integer)
+  overload: TopicBites.Model.Tree.RemoveChild*
+  nameWithType.vb: Tree.RemoveChild(Integer)
+  fullName.vb: TopicBites.Model.Tree.RemoveChild(Integer)
+  name.vb: RemoveChild(Integer)
+- uid: TopicBites.Model.Tree.LookForStudyTopic(System.Int32)
+  commentId: M:TopicBites.Model.Tree.LookForStudyTopic(System.Int32)
+  id: LookForStudyTopic(System.Int32)
+  parent: TopicBites.Model.Tree
+  langs:
+  - csharp
+  - vb
+  name: LookForStudyTopic(int)
+  nameWithType: Tree.LookForStudyTopic(int)
+  fullName: TopicBites.Model.Tree.LookForStudyTopic(int)
+  type: Method
+  source:
+    remote:
+      path: Model/Tree.cs
+      branch: MakeItWork
+      repo: https://github.com/EddieBeru/TopicBites.Backend.git
+    id: LookForStudyTopic
+    path: ../Model/Tree.cs
+    startLine: 51
+  assemblies:
+  - TopicBites
+  namespace: TopicBites.Model
+  syntax:
+    content: public Tree? LookForStudyTopic(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: TopicBites.Model.Tree
+    content.vb: Public Function LookForStudyTopic(id As Integer) As Tree
+  overload: TopicBites.Model.Tree.LookForStudyTopic*
+  nameWithType.vb: Tree.LookForStudyTopic(Integer)
+  fullName.vb: TopicBites.Model.Tree.LookForStudyTopic(Integer)
+  name.vb: LookForStudyTopic(Integer)
+- uid: TopicBites.Model.Tree.NavigateUp
+  commentId: M:TopicBites.Model.Tree.NavigateUp
+  id: NavigateUp
+  parent: TopicBites.Model.Tree
+  langs:
+  - csharp
+  - vb
+  name: NavigateUp()
+  nameWithType: Tree.NavigateUp()
+  fullName: TopicBites.Model.Tree.NavigateUp()
+  type: Method
+  source:
+    remote:
+      path: Model/Tree.cs
+      branch: MakeItWork
+      repo: https://github.com/EddieBeru/TopicBites.Backend.git
+    id: NavigateUp
+    path: ../Model/Tree.cs
+    startLine: 61
+  assemblies:
+  - TopicBites
+  namespace: TopicBites.Model
+  syntax:
+    content: public Tree? NavigateUp()
+    return:
+      type: TopicBites.Model.Tree
+    content.vb: Public Function NavigateUp() As Tree
+  overload: TopicBites.Model.Tree.NavigateUp*
+- uid: TopicBites.Model.Tree.NavigateDown(System.Int32)
+  commentId: M:TopicBites.Model.Tree.NavigateDown(System.Int32)
+  id: NavigateDown(System.Int32)
+  parent: TopicBites.Model.Tree
+  langs:
+  - csharp
+  - vb
+  name: NavigateDown(int)
+  nameWithType: Tree.NavigateDown(int)
+  fullName: TopicBites.Model.Tree.NavigateDown(int)
+  type: Method
+  source:
+    remote:
+      path: Model/Tree.cs
+      branch: MakeItWork
+      repo: https://github.com/EddieBeru/TopicBites.Backend.git
+    id: NavigateDown
+    path: ../Model/Tree.cs
+    startLine: 62
+  assemblies:
+  - TopicBites
+  namespace: TopicBites.Model
+  syntax:
+    content: public Tree? NavigateDown(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: TopicBites.Model.Tree
+    content.vb: Public Function NavigateDown(id As Integer) As Tree
+  overload: TopicBites.Model.Tree.NavigateDown*
+  nameWithType.vb: Tree.NavigateDown(Integer)
+  fullName.vb: TopicBites.Model.Tree.NavigateDown(Integer)
+  name.vb: NavigateDown(Integer)
+- uid: TopicBites.Model.Tree.NavigateToAddress(System.String)
+  commentId: M:TopicBites.Model.Tree.NavigateToAddress(System.String)
+  id: NavigateToAddress(System.String)
+  parent: TopicBites.Model.Tree
+  langs:
+  - csharp
+  - vb
+  name: NavigateToAddress(string)
+  nameWithType: Tree.NavigateToAddress(string)
+  fullName: TopicBites.Model.Tree.NavigateToAddress(string)
+  type: Method
+  source:
+    remote:
+      path: Model/Tree.cs
+      branch: MakeItWork
+      repo: https://github.com/EddieBeru/TopicBites.Backend.git
+    id: NavigateToAddress
+    path: ../Model/Tree.cs
+    startLine: 63
+  assemblies:
+  - TopicBites
+  namespace: TopicBites.Model
+  syntax:
+    content: public Tree? NavigateToAddress(string address)
+    parameters:
+    - id: address
+      type: System.String
+    return:
+      type: TopicBites.Model.Tree
+    content.vb: Public Function NavigateToAddress(address As String) As Tree
+  overload: TopicBites.Model.Tree.NavigateToAddress*
+  nameWithType.vb: Tree.NavigateToAddress(String)
+  fullName.vb: TopicBites.Model.Tree.NavigateToAddress(String)
+  name.vb: NavigateToAddress(String)
+- uid: TopicBites.Model.Tree.AssignDatabaseInstance(TopicBites.Model.DataManagment.Database)
+  commentId: M:TopicBites.Model.Tree.AssignDatabaseInstance(TopicBites.Model.DataManagment.Database)
+  id: AssignDatabaseInstance(TopicBites.Model.DataManagment.Database)
+  parent: TopicBites.Model.Tree
+  langs:
+  - csharp
+  - vb
+  name: AssignDatabaseInstance(Database)
+  nameWithType: Tree.AssignDatabaseInstance(Database)
+  fullName: TopicBites.Model.Tree.AssignDatabaseInstance(TopicBites.Model.DataManagment.Database)
+  type: Method
+  source:
+    remote:
+      path: Model/Tree.cs
+      branch: MakeItWork
+      repo: https://github.com/EddieBeru/TopicBites.Backend.git
+    id: AssignDatabaseInstance
+    path: ../Model/Tree.cs
+    startLine: 76
+  assemblies:
+  - TopicBites
+  namespace: TopicBites.Model
+  syntax:
+    content: public void AssignDatabaseInstance(Database database)
+    parameters:
+    - id: database
+      type: TopicBites.Model.DataManagment.Database
+    content.vb: Public Sub AssignDatabaseInstance(database As Database)
+  overload: TopicBites.Model.Tree.AssignDatabaseInstance*
+- uid: TopicBites.Model.Tree.GetItem
+  commentId: M:TopicBites.Model.Tree.GetItem
+  id: GetItem
+  parent: TopicBites.Model.Tree
+  langs:
+  - csharp
+  - vb
+  name: GetItem()
+  nameWithType: Tree.GetItem()
+  fullName: TopicBites.Model.Tree.GetItem()
+  type: Method
+  source:
+    remote:
+      path: Model/Tree.cs
+      branch: MakeItWork
+      repo: https://github.com/EddieBeru/TopicBites.Backend.git
+    id: GetItem
+    path: ../Model/Tree.cs
+    startLine: 84
+  assemblies:
+  - TopicBites
+  namespace: TopicBites.Model
+  syntax:
+    content: public StudyTopic? GetItem()
+    return:
+      type: TopicBites.Model.StudyTopic
+    content.vb: Public Function GetItem() As StudyTopic
+  overload: TopicBites.Model.Tree.GetItem*
+- uid: TopicBites.Model.Tree.GetParent
+  commentId: M:TopicBites.Model.Tree.GetParent
+  id: GetParent
+  parent: TopicBites.Model.Tree
+  langs:
+  - csharp
+  - vb
+  name: GetParent()
+  nameWithType: Tree.GetParent()
+  fullName: TopicBites.Model.Tree.GetParent()
+  type: Method
+  source:
+    remote:
+      path: Model/Tree.cs
+      branch: MakeItWork
+      repo: https://github.com/EddieBeru/TopicBites.Backend.git
+    id: GetParent
+    path: ../Model/Tree.cs
+    startLine: 85
+  assemblies:
+  - TopicBites
+  namespace: TopicBites.Model
+  syntax:
+    content: public Tree? GetParent()
+    return:
+      type: TopicBites.Model.Tree
+    content.vb: Public Function GetParent() As Tree
+  overload: TopicBites.Model.Tree.GetParent*
+- uid: TopicBites.Model.Tree.GetAddress
+  commentId: M:TopicBites.Model.Tree.GetAddress
+  id: GetAddress
+  parent: TopicBites.Model.Tree
+  langs:
+  - csharp
+  - vb
+  name: GetAddress()
+  nameWithType: Tree.GetAddress()
+  fullName: TopicBites.Model.Tree.GetAddress()
+  type: Method
+  source:
+    remote:
+      path: Model/Tree.cs
+      branch: MakeItWork
+      repo: https://github.com/EddieBeru/TopicBites.Backend.git
+    id: GetAddress
+    path: ../Model/Tree.cs
+    startLine: 86
+  assemblies:
+  - TopicBites
+  namespace: TopicBites.Model
+  syntax:
+    content: public string GetAddress()
+    return:
+      type: System.String
+    content.vb: Public Function GetAddress() As String
+  overload: TopicBites.Model.Tree.GetAddress*
+references:
+- uid: TopicBites.Model
+  commentId: N:TopicBites.Model
+  href: TopicBites.html
+  name: TopicBites.Model
+  nameWithType: TopicBites.Model
+  fullName: TopicBites.Model
+  spec.csharp:
+  - uid: TopicBites
+    name: TopicBites
+    href: TopicBites.html
+  - name: .
+  - uid: TopicBites.Model
+    name: Model
+    href: TopicBites.Model.html
+  spec.vb:
+  - uid: TopicBites
+    name: TopicBites
+    href: TopicBites.html
+  - name: .
+  - uid: TopicBites.Model
+    name: Model
+    href: TopicBites.Model.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TopicBites.Model.Tree.ParentId*
+  commentId: Overload:TopicBites.Model.Tree.ParentId
+  href: TopicBites.Model.Tree.html#TopicBites_Model_Tree_ParentId
+  name: ParentId
+  nameWithType: Tree.ParentId
+  fullName: TopicBites.Model.Tree.ParentId
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: TopicBites.Model.Tree.ItemId*
+  commentId: Overload:TopicBites.Model.Tree.ItemId
+  href: TopicBites.Model.Tree.html#TopicBites_Model_Tree_ItemId
+  name: ItemId
+  nameWithType: Tree.ItemId
+  fullName: TopicBites.Model.Tree.ItemId
+- uid: TopicBites.Model.Tree.Children*
+  commentId: Overload:TopicBites.Model.Tree.Children
+  href: TopicBites.Model.Tree.html#TopicBites_Model_Tree_Children
+  name: Children
+  nameWithType: Tree.Children
+  fullName: TopicBites.Model.Tree.Children
+- uid: System.Collections.Generic.List{TopicBites.Model.Tree}
+  commentId: T:System.Collections.Generic.List{TopicBites.Model.Tree}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Tree>
+  nameWithType: List<Tree>
+  fullName: System.Collections.Generic.List<TopicBites.Model.Tree>
+  nameWithType.vb: List(Of Tree)
+  fullName.vb: System.Collections.Generic.List(Of TopicBites.Model.Tree)
+  name.vb: List(Of Tree)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: TopicBites.Model.Tree
+    name: Tree
+    href: TopicBites.Model.Tree.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: TopicBites.Model.Tree
+    name: Tree
+    href: TopicBites.Model.Tree.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: TopicBites.Model.Tree.Item*
+  commentId: Overload:TopicBites.Model.Tree.Item
+  href: TopicBites.Model.Tree.html#TopicBites_Model_Tree_Item
+  name: Item
+  nameWithType: Tree.Item
+  fullName: TopicBites.Model.Tree.Item
+- uid: TopicBites.Model.StudyTopic
+  commentId: T:TopicBites.Model.StudyTopic
+  parent: TopicBites.Model
+  href: TopicBites.Model.StudyTopic.html
+  name: StudyTopic
+  nameWithType: StudyTopic
+  fullName: TopicBites.Model.StudyTopic
+- uid: TopicBites.Model.Tree.Parent*
+  commentId: Overload:TopicBites.Model.Tree.Parent
+  href: TopicBites.Model.Tree.html#TopicBites_Model_Tree_Parent
+  name: Parent
+  nameWithType: Tree.Parent
+  fullName: TopicBites.Model.Tree.Parent
+- uid: TopicBites.Model.Tree
+  commentId: T:TopicBites.Model.Tree
+  parent: TopicBites.Model
+  href: TopicBites.Model.Tree.html
+  name: Tree
+  nameWithType: Tree
+  fullName: TopicBites.Model.Tree
+- uid: TopicBites.Model.Tree.#ctor*
+  commentId: Overload:TopicBites.Model.Tree.#ctor
+  href: TopicBites.Model.Tree.html#TopicBites_Model_Tree__ctor_System_Int32_System_Int32_
+  name: Tree
+  nameWithType: Tree.Tree
+  fullName: TopicBites.Model.Tree.Tree
+  nameWithType.vb: Tree.New
+  fullName.vb: TopicBites.Model.Tree.New
+  name.vb: New
+- uid: TopicBites.Model.Tree.AddChild*
+  commentId: Overload:TopicBites.Model.Tree.AddChild
+  href: TopicBites.Model.Tree.html#TopicBites_Model_Tree_AddChild_TopicBites_Model_Tree_
+  name: AddChild
+  nameWithType: Tree.AddChild
+  fullName: TopicBites.Model.Tree.AddChild
+- uid: TopicBites.Model.Tree.RemoveChild*
+  commentId: Overload:TopicBites.Model.Tree.RemoveChild
+  href: TopicBites.Model.Tree.html#TopicBites_Model_Tree_RemoveChild_System_Int32_
+  name: RemoveChild
+  nameWithType: Tree.RemoveChild
+  fullName: TopicBites.Model.Tree.RemoveChild
+- uid: TopicBites.Model.Tree.LookForStudyTopic*
+  commentId: Overload:TopicBites.Model.Tree.LookForStudyTopic
+  href: TopicBites.Model.Tree.html#TopicBites_Model_Tree_LookForStudyTopic_System_Int32_
+  name: LookForStudyTopic
+  nameWithType: Tree.LookForStudyTopic
+  fullName: TopicBites.Model.Tree.LookForStudyTopic
+- uid: TopicBites.Model.Tree.NavigateUp*
+  commentId: Overload:TopicBites.Model.Tree.NavigateUp
+  href: TopicBites.Model.Tree.html#TopicBites_Model_Tree_NavigateUp
+  name: NavigateUp
+  nameWithType: Tree.NavigateUp
+  fullName: TopicBites.Model.Tree.NavigateUp
+- uid: TopicBites.Model.Tree.NavigateDown*
+  commentId: Overload:TopicBites.Model.Tree.NavigateDown
+  href: TopicBites.Model.Tree.html#TopicBites_Model_Tree_NavigateDown_System_Int32_
+  name: NavigateDown
+  nameWithType: Tree.NavigateDown
+  fullName: TopicBites.Model.Tree.NavigateDown
+- uid: TopicBites.Model.Tree.NavigateToAddress*
+  commentId: Overload:TopicBites.Model.Tree.NavigateToAddress
+  href: TopicBites.Model.Tree.html#TopicBites_Model_Tree_NavigateToAddress_System_String_
+  name: NavigateToAddress
+  nameWithType: Tree.NavigateToAddress
+  fullName: TopicBites.Model.Tree.NavigateToAddress
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: TopicBites.Model.Tree.AssignDatabaseInstance*
+  commentId: Overload:TopicBites.Model.Tree.AssignDatabaseInstance
+  href: TopicBites.Model.Tree.html#TopicBites_Model_Tree_AssignDatabaseInstance_TopicBites_Model_DataManagment_Database_
+  name: AssignDatabaseInstance
+  nameWithType: Tree.AssignDatabaseInstance
+  fullName: TopicBites.Model.Tree.AssignDatabaseInstance
+- uid: TopicBites.Model.DataManagment.Database
+  commentId: T:TopicBites.Model.DataManagment.Database
+  parent: TopicBites.Model.DataManagment
+  href: TopicBites.Model.DataManagment.Database.html
+  name: Database
+  nameWithType: Database
+  fullName: TopicBites.Model.DataManagment.Database
+- uid: TopicBites.Model.DataManagment
+  commentId: N:TopicBites.Model.DataManagment
+  href: TopicBites.html
+  name: TopicBites.Model.DataManagment
+  nameWithType: TopicBites.Model.DataManagment
+  fullName: TopicBites.Model.DataManagment
+  spec.csharp:
+  - uid: TopicBites
+    name: TopicBites
+    href: TopicBites.html
+  - name: .
+  - uid: TopicBites.Model
+    name: Model
+    href: TopicBites.Model.html
+  - name: .
+  - uid: TopicBites.Model.DataManagment
+    name: DataManagment
+    href: TopicBites.Model.DataManagment.html
+  spec.vb:
+  - uid: TopicBites
+    name: TopicBites
+    href: TopicBites.html
+  - name: .
+  - uid: TopicBites.Model
+    name: Model
+    href: TopicBites.Model.html
+  - name: .
+  - uid: TopicBites.Model.DataManagment
+    name: DataManagment
+    href: TopicBites.Model.DataManagment.html
+- uid: TopicBites.Model.Tree.GetItem*
+  commentId: Overload:TopicBites.Model.Tree.GetItem
+  href: TopicBites.Model.Tree.html#TopicBites_Model_Tree_GetItem
+  name: GetItem
+  nameWithType: Tree.GetItem
+  fullName: TopicBites.Model.Tree.GetItem
+- uid: TopicBites.Model.Tree.GetParent*
+  commentId: Overload:TopicBites.Model.Tree.GetParent
+  href: TopicBites.Model.Tree.html#TopicBites_Model_Tree_GetParent
+  name: GetParent
+  nameWithType: Tree.GetParent
+  fullName: TopicBites.Model.Tree.GetParent
+- uid: TopicBites.Model.Tree.GetAddress*
+  commentId: Overload:TopicBites.Model.Tree.GetAddress
+  href: TopicBites.Model.Tree.html#TopicBites_Model_Tree_GetAddress
+  name: GetAddress
+  nameWithType: Tree.GetAddress
+  fullName: TopicBites.Model.Tree.GetAddress

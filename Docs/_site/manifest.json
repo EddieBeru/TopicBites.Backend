@@ -1,0 +1,270 @@
+{
+  "source_base_path": "D:/Programming Files/Personal Projects/TopicBites/TopicBites/Docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TopicBites.Model.ContentBlocks.ContentBlock.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TopicBites.Model.ContentBlocks.ContentBlock.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TopicBites.Model.ContentBlocks.ContentBlock",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TopicBites.Model.ContentBlocks.ImageBlock.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TopicBites.Model.ContentBlocks.ImageBlock.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TopicBites.Model.ContentBlocks.ImageBlock",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TopicBites.Model.ContentBlocks.TextBlock.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TopicBites.Model.ContentBlocks.TextBlock.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TopicBites.Model.ContentBlocks.TextBlock",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TopicBites.Model.ContentBlocks.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TopicBites.Model.ContentBlocks.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TopicBites.Model.ContentBlocks",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TopicBites.Model.DataManagment.Database.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TopicBites.Model.DataManagment.Database.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TopicBites.Model.DataManagment.Database",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TopicBites.Model.DataManagment.UIDManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TopicBites.Model.DataManagment.UIDManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TopicBites.Model.DataManagment.UIDManager",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TopicBites.Model.DataManagment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TopicBites.Model.DataManagment.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TopicBites.Model.DataManagment",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TopicBites.Model.Iteration.IterateToAddress.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TopicBites.Model.Iteration.IterateToAddress.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TopicBites.Model.Iteration.IterateToAddress",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TopicBites.Model.Iteration.Iteration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TopicBites.Model.Iteration.Iteration.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TopicBites.Model.Iteration.Iteration",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TopicBites.Model.Iteration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TopicBites.Model.Iteration.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TopicBites.Model.Iteration",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TopicBites.Model.StudyTopic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TopicBites.Model.StudyTopic.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TopicBites.Model.StudyTopic",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TopicBites.Model.Tree.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TopicBites.Model.Tree.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TopicBites.Model.Tree",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TopicBites.Model.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TopicBites.Model.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TopicBites.Model",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

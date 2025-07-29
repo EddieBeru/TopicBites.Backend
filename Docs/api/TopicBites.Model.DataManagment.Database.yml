@@ -1,0 +1,819 @@
+### YamlMime:ManagedReference
+items:
+- uid: TopicBites.Model.DataManagment.Database
+  commentId: T:TopicBites.Model.DataManagment.Database
+  id: Database
+  parent: TopicBites.Model.DataManagment
+  children:
+  - TopicBites.Model.DataManagment.Database.#ctor(System.Collections.Generic.List{TopicBites.Model.StudyTopic},TopicBites.Model.Tree)
+  - TopicBites.Model.DataManagment.Database.AddStudyTopic(TopicBites.Model.StudyTopic,System.String)
+  - TopicBites.Model.DataManagment.Database.AsignStudyTopicAsChildren(System.Int32,System.Int32)
+  - TopicBites.Model.DataManagment.Database.GetAddressOfTopic(TopicBites.Model.StudyTopic)
+  - TopicBites.Model.DataManagment.Database.GetAllStudyTopics
+  - TopicBites.Model.DataManagment.Database.GetMainTree
+  - TopicBites.Model.DataManagment.Database.GetStudyTopicById(System.Int32)
+  - TopicBites.Model.DataManagment.Database.GetTree(System.Int32)
+  - TopicBites.Model.DataManagment.Database.RemoveStudyTopic(System.Int32,System.String)
+  langs:
+  - csharp
+  - vb
+  name: Database
+  nameWithType: Database
+  fullName: TopicBites.Model.DataManagment.Database
+  type: Class
+  source:
+    remote:
+      path: Model/DataManagment/Database.cs
+      branch: MakeItWork
+      repo: https://github.com/EddieBeru/TopicBites.Backend.git
+    id: Database
+    path: ../Model/DataManagment/Database.cs
+    startLine: 8
+  assemblies:
+  - TopicBites
+  namespace: TopicBites.Model.DataManagment
+  syntax:
+    content: public class Database
+    content.vb: Public Class Database
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: TopicBites.Model.DataManagment.Database.#ctor(System.Collections.Generic.List{TopicBites.Model.StudyTopic},TopicBites.Model.Tree)
+  commentId: M:TopicBites.Model.DataManagment.Database.#ctor(System.Collections.Generic.List{TopicBites.Model.StudyTopic},TopicBites.Model.Tree)
+  id: '#ctor(System.Collections.Generic.List{TopicBites.Model.StudyTopic},TopicBites.Model.Tree)'
+  parent: TopicBites.Model.DataManagment.Database
+  langs:
+  - csharp
+  - vb
+  name: Database(List<StudyTopic>?, Tree?)
+  nameWithType: Database.Database(List<StudyTopic>?, Tree?)
+  fullName: TopicBites.Model.DataManagment.Database.Database(System.Collections.Generic.List<TopicBites.Model.StudyTopic>?, TopicBites.Model.Tree?)
+  type: Constructor
+  source:
+    remote:
+      path: Model/DataManagment/Database.cs
+      branch: MakeItWork
+      repo: https://github.com/EddieBeru/TopicBites.Backend.git
+    id: .ctor
+    path: ../Model/DataManagment/Database.cs
+    startLine: 13
+  assemblies:
+  - TopicBites
+  namespace: TopicBites.Model.DataManagment
+  syntax:
+    content: public Database(List<StudyTopic>? studyTopics, Tree? tree)
+    parameters:
+    - id: studyTopics
+      type: System.Collections.Generic.List{TopicBites.Model.StudyTopic}
+    - id: tree
+      type: TopicBites.Model.Tree
+    content.vb: Public Sub New(studyTopics As List(Of StudyTopic), tree As Tree)
+  overload: TopicBites.Model.DataManagment.Database.#ctor*
+  nameWithType.vb: Database.New(List(Of StudyTopic), Tree)
+  fullName.vb: TopicBites.Model.DataManagment.Database.New(System.Collections.Generic.List(Of TopicBites.Model.StudyTopic), TopicBites.Model.Tree)
+  name.vb: New(List(Of StudyTopic), Tree)
+- uid: TopicBites.Model.DataManagment.Database.AddStudyTopic(TopicBites.Model.StudyTopic,System.String)
+  commentId: M:TopicBites.Model.DataManagment.Database.AddStudyTopic(TopicBites.Model.StudyTopic,System.String)
+  id: AddStudyTopic(TopicBites.Model.StudyTopic,System.String)
+  parent: TopicBites.Model.DataManagment.Database
+  langs:
+  - csharp
+  - vb
+  name: AddStudyTopic(StudyTopic, string)
+  nameWithType: Database.AddStudyTopic(StudyTopic, string)
+  fullName: TopicBites.Model.DataManagment.Database.AddStudyTopic(TopicBites.Model.StudyTopic, string)
+  type: Method
+  source:
+    remote:
+      path: Model/DataManagment/Database.cs
+      branch: MakeItWork
+      repo: https://github.com/EddieBeru/TopicBites.Backend.git
+    id: AddStudyTopic
+    path: ../Model/DataManagment/Database.cs
+    startLine: 18
+  assemblies:
+  - TopicBites
+  namespace: TopicBites.Model.DataManagment
+  syntax:
+    content: public void AddStudyTopic(StudyTopic topic, string address)
+    parameters:
+    - id: topic
+      type: TopicBites.Model.StudyTopic
+    - id: address
+      type: System.String
+    content.vb: Public Sub AddStudyTopic(topic As StudyTopic, address As String)
+  overload: TopicBites.Model.DataManagment.Database.AddStudyTopic*
+  nameWithType.vb: Database.AddStudyTopic(StudyTopic, String)
+  fullName.vb: TopicBites.Model.DataManagment.Database.AddStudyTopic(TopicBites.Model.StudyTopic, String)
+  name.vb: AddStudyTopic(StudyTopic, String)
+- uid: TopicBites.Model.DataManagment.Database.RemoveStudyTopic(System.Int32,System.String)
+  commentId: M:TopicBites.Model.DataManagment.Database.RemoveStudyTopic(System.Int32,System.String)
+  id: RemoveStudyTopic(System.Int32,System.String)
+  parent: TopicBites.Model.DataManagment.Database
+  langs:
+  - csharp
+  - vb
+  name: RemoveStudyTopic(int, string)
+  nameWithType: Database.RemoveStudyTopic(int, string)
+  fullName: TopicBites.Model.DataManagment.Database.RemoveStudyTopic(int, string)
+  type: Method
+  source:
+    remote:
+      path: Model/DataManagment/Database.cs
+      branch: MakeItWork
+      repo: https://github.com/EddieBeru/TopicBites.Backend.git
+    id: RemoveStudyTopic
+    path: ../Model/DataManagment/Database.cs
+    startLine: 30
+  assemblies:
+  - TopicBites
+  namespace: TopicBites.Model.DataManagment
+  syntax:
+    content: public void RemoveStudyTopic(int id, string address)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: address
+      type: System.String
+    content.vb: Public Sub RemoveStudyTopic(id As Integer, address As String)
+  overload: TopicBites.Model.DataManagment.Database.RemoveStudyTopic*
+  nameWithType.vb: Database.RemoveStudyTopic(Integer, String)
+  fullName.vb: TopicBites.Model.DataManagment.Database.RemoveStudyTopic(Integer, String)
+  name.vb: RemoveStudyTopic(Integer, String)
+- uid: TopicBites.Model.DataManagment.Database.AsignStudyTopicAsChildren(System.Int32,System.Int32)
+  commentId: M:TopicBites.Model.DataManagment.Database.AsignStudyTopicAsChildren(System.Int32,System.Int32)
+  id: AsignStudyTopicAsChildren(System.Int32,System.Int32)
+  parent: TopicBites.Model.DataManagment.Database
+  langs:
+  - csharp
+  - vb
+  name: AsignStudyTopicAsChildren(int, int)
+  nameWithType: Database.AsignStudyTopicAsChildren(int, int)
+  fullName: TopicBites.Model.DataManagment.Database.AsignStudyTopicAsChildren(int, int)
+  type: Method
+  source:
+    remote:
+      path: Model/DataManagment/Database.cs
+      branch: MakeItWork
+      repo: https://github.com/EddieBeru/TopicBites.Backend.git
+    id: AsignStudyTopicAsChildren
+    path: ../Model/DataManagment/Database.cs
+    startLine: 36
+  assemblies:
+  - TopicBites
+  namespace: TopicBites.Model.DataManagment
+  syntax:
+    content: public void AsignStudyTopicAsChildren(int topicId, int childId)
+    parameters:
+    - id: topicId
+      type: System.Int32
+    - id: childId
+      type: System.Int32
+    content.vb: Public Sub AsignStudyTopicAsChildren(topicId As Integer, childId As Integer)
+  overload: TopicBites.Model.DataManagment.Database.AsignStudyTopicAsChildren*
+  nameWithType.vb: Database.AsignStudyTopicAsChildren(Integer, Integer)
+  fullName.vb: TopicBites.Model.DataManagment.Database.AsignStudyTopicAsChildren(Integer, Integer)
+  name.vb: AsignStudyTopicAsChildren(Integer, Integer)
+- uid: TopicBites.Model.DataManagment.Database.GetTree(System.Int32)
+  commentId: M:TopicBites.Model.DataManagment.Database.GetTree(System.Int32)
+  id: GetTree(System.Int32)
+  parent: TopicBites.Model.DataManagment.Database
+  langs:
+  - csharp
+  - vb
+  name: GetTree(int)
+  nameWithType: Database.GetTree(int)
+  fullName: TopicBites.Model.DataManagment.Database.GetTree(int)
+  type: Method
+  source:
+    remote:
+      path: Model/DataManagment/Database.cs
+      branch: MakeItWork
+      repo: https://github.com/EddieBeru/TopicBites.Backend.git
+    id: GetTree
+    path: ../Model/DataManagment/Database.cs
+    startLine: 45
+  assemblies:
+  - TopicBites
+  namespace: TopicBites.Model.DataManagment
+  syntax:
+    content: public Tree? GetTree(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: TopicBites.Model.Tree
+    content.vb: Public Function GetTree(id As Integer) As Tree
+  overload: TopicBites.Model.DataManagment.Database.GetTree*
+  nameWithType.vb: Database.GetTree(Integer)
+  fullName.vb: TopicBites.Model.DataManagment.Database.GetTree(Integer)
+  name.vb: GetTree(Integer)
+- uid: TopicBites.Model.DataManagment.Database.GetMainTree
+  commentId: M:TopicBites.Model.DataManagment.Database.GetMainTree
+  id: GetMainTree
+  parent: TopicBites.Model.DataManagment.Database
+  langs:
+  - csharp
+  - vb
+  name: GetMainTree()
+  nameWithType: Database.GetMainTree()
+  fullName: TopicBites.Model.DataManagment.Database.GetMainTree()
+  type: Method
+  source:
+    remote:
+      path: Model/DataManagment/Database.cs
+      branch: MakeItWork
+      repo: https://github.com/EddieBeru/TopicBites.Backend.git
+    id: GetMainTree
+    path: ../Model/DataManagment/Database.cs
+    startLine: 49
+  assemblies:
+  - TopicBites
+  namespace: TopicBites.Model.DataManagment
+  syntax:
+    content: public Tree GetMainTree()
+    return:
+      type: TopicBites.Model.Tree
+    content.vb: Public Function GetMainTree() As Tree
+  overload: TopicBites.Model.DataManagment.Database.GetMainTree*
+- uid: TopicBites.Model.DataManagment.Database.GetStudyTopicById(System.Int32)
+  commentId: M:TopicBites.Model.DataManagment.Database.GetStudyTopicById(System.Int32)
+  id: GetStudyTopicById(System.Int32)
+  parent: TopicBites.Model.DataManagment.Database
+  langs:
+  - csharp
+  - vb
+  name: GetStudyTopicById(int)
+  nameWithType: Database.GetStudyTopicById(int)
+  fullName: TopicBites.Model.DataManagment.Database.GetStudyTopicById(int)
+  type: Method
+  source:
+    remote:
+      path: Model/DataManagment/Database.cs
+      branch: MakeItWork
+      repo: https://github.com/EddieBeru/TopicBites.Backend.git
+    id: GetStudyTopicById
+    path: ../Model/DataManagment/Database.cs
+    startLine: 53
+  assemblies:
+  - TopicBites
+  namespace: TopicBites.Model.DataManagment
+  syntax:
+    content: public StudyTopic? GetStudyTopicById(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: TopicBites.Model.StudyTopic
+    content.vb: Public Function GetStudyTopicById(id As Integer) As StudyTopic
+  overload: TopicBites.Model.DataManagment.Database.GetStudyTopicById*
+  nameWithType.vb: Database.GetStudyTopicById(Integer)
+  fullName.vb: TopicBites.Model.DataManagment.Database.GetStudyTopicById(Integer)
+  name.vb: GetStudyTopicById(Integer)
+- uid: TopicBites.Model.DataManagment.Database.GetAllStudyTopics
+  commentId: M:TopicBites.Model.DataManagment.Database.GetAllStudyTopics
+  id: GetAllStudyTopics
+  parent: TopicBites.Model.DataManagment.Database
+  langs:
+  - csharp
+  - vb
+  name: GetAllStudyTopics()
+  nameWithType: Database.GetAllStudyTopics()
+  fullName: TopicBites.Model.DataManagment.Database.GetAllStudyTopics()
+  type: Method
+  source:
+    remote:
+      path: Model/DataManagment/Database.cs
+      branch: MakeItWork
+      repo: https://github.com/EddieBeru/TopicBites.Backend.git
+    id: GetAllStudyTopics
+    path: ../Model/DataManagment/Database.cs
+    startLine: 57
+  assemblies:
+  - TopicBites
+  namespace: TopicBites.Model.DataManagment
+  syntax:
+    content: public List<StudyTopic> GetAllStudyTopics()
+    return:
+      type: System.Collections.Generic.List{TopicBites.Model.StudyTopic}
+    content.vb: Public Function GetAllStudyTopics() As List(Of StudyTopic)
+  overload: TopicBites.Model.DataManagment.Database.GetAllStudyTopics*
+- uid: TopicBites.Model.DataManagment.Database.GetAddressOfTopic(TopicBites.Model.StudyTopic)
+  commentId: M:TopicBites.Model.DataManagment.Database.GetAddressOfTopic(TopicBites.Model.StudyTopic)
+  id: GetAddressOfTopic(TopicBites.Model.StudyTopic)
+  parent: TopicBites.Model.DataManagment.Database
+  langs:
+  - csharp
+  - vb
+  name: GetAddressOfTopic(StudyTopic)
+  nameWithType: Database.GetAddressOfTopic(StudyTopic)
+  fullName: TopicBites.Model.DataManagment.Database.GetAddressOfTopic(TopicBites.Model.StudyTopic)
+  type: Method
+  source:
+    remote:
+      path: Model/DataManagment/Database.cs
+      branch: MakeItWork
+      repo: https://github.com/EddieBeru/TopicBites.Backend.git
+    id: GetAddressOfTopic
+    path: ../Model/DataManagment/Database.cs
+    startLine: 61
+  assemblies:
+  - TopicBites
+  namespace: TopicBites.Model.DataManagment
+  syntax:
+    content: public string GetAddressOfTopic(StudyTopic topic)
+    parameters:
+    - id: topic
+      type: TopicBites.Model.StudyTopic
+    return:
+      type: System.String
+    content.vb: Public Function GetAddressOfTopic(topic As StudyTopic) As String
+  overload: TopicBites.Model.DataManagment.Database.GetAddressOfTopic*
+references:
+- uid: TopicBites.Model.DataManagment
+  commentId: N:TopicBites.Model.DataManagment
+  href: TopicBites.html
+  name: TopicBites.Model.DataManagment
+  nameWithType: TopicBites.Model.DataManagment
+  fullName: TopicBites.Model.DataManagment
+  spec.csharp:
+  - uid: TopicBites
+    name: TopicBites
+    href: TopicBites.html
+  - name: .
+  - uid: TopicBites.Model
+    name: Model
+    href: TopicBites.Model.html
+  - name: .
+  - uid: TopicBites.Model.DataManagment
+    name: DataManagment
+    href: TopicBites.Model.DataManagment.html
+  spec.vb:
+  - uid: TopicBites
+    name: TopicBites
+    href: TopicBites.html
+  - name: .
+  - uid: TopicBites.Model
+    name: Model
+    href: TopicBites.Model.html
+  - name: .
+  - uid: TopicBites.Model.DataManagment
+    name: DataManagment
+    href: TopicBites.Model.DataManagment.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TopicBites.Model.DataManagment.Database.#ctor*
+  commentId: Overload:TopicBites.Model.DataManagment.Database.#ctor
+  href: TopicBites.Model.DataManagment.Database.html#TopicBites_Model_DataManagment_Database__ctor_System_Collections_Generic_List_TopicBites_Model_StudyTopic__TopicBites_Model_Tree_
+  name: Database
+  nameWithType: Database.Database
+  fullName: TopicBites.Model.DataManagment.Database.Database
+  nameWithType.vb: Database.New
+  fullName.vb: TopicBites.Model.DataManagment.Database.New
+  name.vb: New
+- uid: System.Collections.Generic.List{TopicBites.Model.StudyTopic}
+  commentId: T:System.Collections.Generic.List{TopicBites.Model.StudyTopic}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<StudyTopic>
+  nameWithType: List<StudyTopic>
+  fullName: System.Collections.Generic.List<TopicBites.Model.StudyTopic>
+  nameWithType.vb: List(Of StudyTopic)
+  fullName.vb: System.Collections.Generic.List(Of TopicBites.Model.StudyTopic)
+  name.vb: List(Of StudyTopic)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: TopicBites.Model.StudyTopic
+    name: StudyTopic
+    href: TopicBites.Model.StudyTopic.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: TopicBites.Model.StudyTopic
+    name: StudyTopic
+    href: TopicBites.Model.StudyTopic.html
+  - name: )
+- uid: TopicBites.Model.Tree
+  commentId: T:TopicBites.Model.Tree
+  parent: TopicBites.Model
+  href: TopicBites.Model.Tree.html
+  name: Tree
+  nameWithType: Tree
+  fullName: TopicBites.Model.Tree
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: TopicBites.Model
+  commentId: N:TopicBites.Model
+  href: TopicBites.html
+  name: TopicBites.Model
+  nameWithType: TopicBites.Model
+  fullName: TopicBites.Model
+  spec.csharp:
+  - uid: TopicBites
+    name: TopicBites
+    href: TopicBites.html
+  - name: .
+  - uid: TopicBites.Model
+    name: Model
+    href: TopicBites.Model.html
+  spec.vb:
+  - uid: TopicBites
+    name: TopicBites
+    href: TopicBites.html
+  - name: .
+  - uid: TopicBites.Model
+    name: Model
+    href: TopicBites.Model.html
+- uid: TopicBites.Model.DataManagment.Database.AddStudyTopic*
+  commentId: Overload:TopicBites.Model.DataManagment.Database.AddStudyTopic
+  href: TopicBites.Model.DataManagment.Database.html#TopicBites_Model_DataManagment_Database_AddStudyTopic_TopicBites_Model_StudyTopic_System_String_
+  name: AddStudyTopic
+  nameWithType: Database.AddStudyTopic
+  fullName: TopicBites.Model.DataManagment.Database.AddStudyTopic
+- uid: TopicBites.Model.StudyTopic
+  commentId: T:TopicBites.Model.StudyTopic
+  parent: TopicBites.Model
+  href: TopicBites.Model.StudyTopic.html
+  name: StudyTopic
+  nameWithType: StudyTopic
+  fullName: TopicBites.Model.StudyTopic
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: TopicBites.Model.DataManagment.Database.RemoveStudyTopic*
+  commentId: Overload:TopicBites.Model.DataManagment.Database.RemoveStudyTopic
+  href: TopicBites.Model.DataManagment.Database.html#TopicBites_Model_DataManagment_Database_RemoveStudyTopic_System_Int32_System_String_
+  name: RemoveStudyTopic
+  nameWithType: Database.RemoveStudyTopic
+  fullName: TopicBites.Model.DataManagment.Database.RemoveStudyTopic
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: TopicBites.Model.DataManagment.Database.AsignStudyTopicAsChildren*
+  commentId: Overload:TopicBites.Model.DataManagment.Database.AsignStudyTopicAsChildren
+  href: TopicBites.Model.DataManagment.Database.html#TopicBites_Model_DataManagment_Database_AsignStudyTopicAsChildren_System_Int32_System_Int32_
+  name: AsignStudyTopicAsChildren
+  nameWithType: Database.AsignStudyTopicAsChildren
+  fullName: TopicBites.Model.DataManagment.Database.AsignStudyTopicAsChildren
+- uid: TopicBites.Model.DataManagment.Database.GetTree*
+  commentId: Overload:TopicBites.Model.DataManagment.Database.GetTree
+  href: TopicBites.Model.DataManagment.Database.html#TopicBites_Model_DataManagment_Database_GetTree_System_Int32_
+  name: GetTree
+  nameWithType: Database.GetTree
+  fullName: TopicBites.Model.DataManagment.Database.GetTree
+- uid: TopicBites.Model.DataManagment.Database.GetMainTree*
+  commentId: Overload:TopicBites.Model.DataManagment.Database.GetMainTree
+  href: TopicBites.Model.DataManagment.Database.html#TopicBites_Model_DataManagment_Database_GetMainTree
+  name: GetMainTree
+  nameWithType: Database.GetMainTree
+  fullName: TopicBites.Model.DataManagment.Database.GetMainTree
+- uid: TopicBites.Model.DataManagment.Database.GetStudyTopicById*
+  commentId: Overload:TopicBites.Model.DataManagment.Database.GetStudyTopicById
+  href: TopicBites.Model.DataManagment.Database.html#TopicBites_Model_DataManagment_Database_GetStudyTopicById_System_Int32_
+  name: GetStudyTopicById
+  nameWithType: Database.GetStudyTopicById
+  fullName: TopicBites.Model.DataManagment.Database.GetStudyTopicById
+- uid: TopicBites.Model.DataManagment.Database.GetAllStudyTopics*
+  commentId: Overload:TopicBites.Model.DataManagment.Database.GetAllStudyTopics
+  href: TopicBites.Model.DataManagment.Database.html#TopicBites_Model_DataManagment_Database_GetAllStudyTopics
+  name: GetAllStudyTopics
+  nameWithType: Database.GetAllStudyTopics
+  fullName: TopicBites.Model.DataManagment.Database.GetAllStudyTopics
+- uid: TopicBites.Model.DataManagment.Database.GetAddressOfTopic*
+  commentId: Overload:TopicBites.Model.DataManagment.Database.GetAddressOfTopic
+  href: TopicBites.Model.DataManagment.Database.html#TopicBites_Model_DataManagment_Database_GetAddressOfTopic_TopicBites_Model_StudyTopic_
+  name: GetAddressOfTopic
+  nameWithType: Database.GetAddressOfTopic
+  fullName: TopicBites.Model.DataManagment.Database.GetAddressOfTopic

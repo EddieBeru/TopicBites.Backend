@@ -1,0 +1,671 @@
+### YamlMime:ManagedReference
+items:
+- uid: TopicBites.Model.StudyTopic
+  commentId: T:TopicBites.Model.StudyTopic
+  id: StudyTopic
+  parent: TopicBites.Model
+  children:
+  - TopicBites.Model.StudyTopic.#ctor
+  - TopicBites.Model.StudyTopic.#ctor(System.String)
+  - TopicBites.Model.StudyTopic.AddContentBlock(TopicBites.Model.ContentBlocks.ContentBlock)
+  - TopicBites.Model.StudyTopic.Content
+  - TopicBites.Model.StudyTopic.Id
+  - TopicBites.Model.StudyTopic.Title
+  langs:
+  - csharp
+  - vb
+  name: StudyTopic
+  nameWithType: StudyTopic
+  fullName: TopicBites.Model.StudyTopic
+  type: Class
+  source:
+    remote:
+      path: Model/StudyTopic.cs
+      branch: MakeItWork
+      repo: https://github.com/EddieBeru/TopicBites.Backend.git
+    id: StudyTopic
+    path: ../Model/StudyTopic.cs
+    startLine: 6
+  assemblies:
+  - TopicBites
+  namespace: TopicBites.Model
+  syntax:
+    content: public class StudyTopic
+    content.vb: Public Class StudyTopic
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: TopicBites.Model.StudyTopic.Id
+  commentId: P:TopicBites.Model.StudyTopic.Id
+  id: Id
+  parent: TopicBites.Model.StudyTopic
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: StudyTopic.Id
+  fullName: TopicBites.Model.StudyTopic.Id
+  type: Property
+  source:
+    remote:
+      path: Model/StudyTopic.cs
+      branch: MakeItWork
+      repo: https://github.com/EddieBeru/TopicBites.Backend.git
+    id: Id
+    path: ../Model/StudyTopic.cs
+    startLine: 8
+  assemblies:
+  - TopicBites
+  namespace: TopicBites.Model
+  syntax:
+    content: public int Id { get; protected set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Id As Integer
+  overload: TopicBites.Model.StudyTopic.Id*
+- uid: TopicBites.Model.StudyTopic.Title
+  commentId: P:TopicBites.Model.StudyTopic.Title
+  id: Title
+  parent: TopicBites.Model.StudyTopic
+  langs:
+  - csharp
+  - vb
+  name: Title
+  nameWithType: StudyTopic.Title
+  fullName: TopicBites.Model.StudyTopic.Title
+  type: Property
+  source:
+    remote:
+      path: Model/StudyTopic.cs
+      branch: MakeItWork
+      repo: https://github.com/EddieBeru/TopicBites.Backend.git
+    id: Title
+    path: ../Model/StudyTopic.cs
+    startLine: 9
+  assemblies:
+  - TopicBites
+  namespace: TopicBites.Model
+  syntax:
+    content: public string Title { get; protected set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Title As String
+  overload: TopicBites.Model.StudyTopic.Title*
+- uid: TopicBites.Model.StudyTopic.Content
+  commentId: P:TopicBites.Model.StudyTopic.Content
+  id: Content
+  parent: TopicBites.Model.StudyTopic
+  langs:
+  - csharp
+  - vb
+  name: Content
+  nameWithType: StudyTopic.Content
+  fullName: TopicBites.Model.StudyTopic.Content
+  type: Property
+  source:
+    remote:
+      path: Model/StudyTopic.cs
+      branch: MakeItWork
+      repo: https://github.com/EddieBeru/TopicBites.Backend.git
+    id: Content
+    path: ../Model/StudyTopic.cs
+    startLine: 10
+  assemblies:
+  - TopicBites
+  namespace: TopicBites.Model
+  syntax:
+    content: public ObservableCollection<ContentBlock> Content { get; protected set; }
+    parameters: []
+    return:
+      type: System.Collections.ObjectModel.ObservableCollection{TopicBites.Model.ContentBlocks.ContentBlock}
+    content.vb: Public Property Content As ObservableCollection(Of ContentBlock)
+  overload: TopicBites.Model.StudyTopic.Content*
+- uid: TopicBites.Model.StudyTopic.#ctor
+  commentId: M:TopicBites.Model.StudyTopic.#ctor
+  id: '#ctor'
+  parent: TopicBites.Model.StudyTopic
+  langs:
+  - csharp
+  - vb
+  name: StudyTopic()
+  nameWithType: StudyTopic.StudyTopic()
+  fullName: TopicBites.Model.StudyTopic.StudyTopic()
+  type: Constructor
+  source:
+    remote:
+      path: Model/StudyTopic.cs
+      branch: MakeItWork
+      repo: https://github.com/EddieBeru/TopicBites.Backend.git
+    id: .ctor
+    path: ../Model/StudyTopic.cs
+    startLine: 12
+  assemblies:
+  - TopicBites
+  namespace: TopicBites.Model
+  syntax:
+    content: public StudyTopic()
+    content.vb: Public Sub New()
+  overload: TopicBites.Model.StudyTopic.#ctor*
+  nameWithType.vb: StudyTopic.New()
+  fullName.vb: TopicBites.Model.StudyTopic.New()
+  name.vb: New()
+- uid: TopicBites.Model.StudyTopic.#ctor(System.String)
+  commentId: M:TopicBites.Model.StudyTopic.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: TopicBites.Model.StudyTopic
+  langs:
+  - csharp
+  - vb
+  name: StudyTopic(string)
+  nameWithType: StudyTopic.StudyTopic(string)
+  fullName: TopicBites.Model.StudyTopic.StudyTopic(string)
+  type: Constructor
+  source:
+    remote:
+      path: Model/StudyTopic.cs
+      branch: MakeItWork
+      repo: https://github.com/EddieBeru/TopicBites.Backend.git
+    id: .ctor
+    path: ../Model/StudyTopic.cs
+    startLine: 16
+  assemblies:
+  - TopicBites
+  namespace: TopicBites.Model
+  syntax:
+    content: public StudyTopic(string title)
+    parameters:
+    - id: title
+      type: System.String
+    content.vb: Public Sub New(title As String)
+  overload: TopicBites.Model.StudyTopic.#ctor*
+  nameWithType.vb: StudyTopic.New(String)
+  fullName.vb: TopicBites.Model.StudyTopic.New(String)
+  name.vb: New(String)
+- uid: TopicBites.Model.StudyTopic.AddContentBlock(TopicBites.Model.ContentBlocks.ContentBlock)
+  commentId: M:TopicBites.Model.StudyTopic.AddContentBlock(TopicBites.Model.ContentBlocks.ContentBlock)
+  id: AddContentBlock(TopicBites.Model.ContentBlocks.ContentBlock)
+  parent: TopicBites.Model.StudyTopic
+  langs:
+  - csharp
+  - vb
+  name: AddContentBlock(ContentBlock)
+  nameWithType: StudyTopic.AddContentBlock(ContentBlock)
+  fullName: TopicBites.Model.StudyTopic.AddContentBlock(TopicBites.Model.ContentBlocks.ContentBlock)
+  type: Method
+  source:
+    remote:
+      path: Model/StudyTopic.cs
+      branch: MakeItWork
+      repo: https://github.com/EddieBeru/TopicBites.Backend.git
+    id: AddContentBlock
+    path: ../Model/StudyTopic.cs
+    startLine: 20
+  assemblies:
+  - TopicBites
+  namespace: TopicBites.Model
+  syntax:
+    content: public void AddContentBlock(ContentBlock contentBlock)
+    parameters:
+    - id: contentBlock
+      type: TopicBites.Model.ContentBlocks.ContentBlock
+    content.vb: Public Sub AddContentBlock(contentBlock As ContentBlock)
+  overload: TopicBites.Model.StudyTopic.AddContentBlock*
+references:
+- uid: TopicBites.Model
+  commentId: N:TopicBites.Model
+  href: TopicBites.html
+  name: TopicBites.Model
+  nameWithType: TopicBites.Model
+  fullName: TopicBites.Model
+  spec.csharp:
+  - uid: TopicBites
+    name: TopicBites
+    href: TopicBites.html
+  - name: .
+  - uid: TopicBites.Model
+    name: Model
+    href: TopicBites.Model.html
+  spec.vb:
+  - uid: TopicBites
+    name: TopicBites
+    href: TopicBites.html
+  - name: .
+  - uid: TopicBites.Model
+    name: Model
+    href: TopicBites.Model.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TopicBites.Model.StudyTopic.Id*
+  commentId: Overload:TopicBites.Model.StudyTopic.Id
+  href: TopicBites.Model.StudyTopic.html#TopicBites_Model_StudyTopic_Id
+  name: Id
+  nameWithType: StudyTopic.Id
+  fullName: TopicBites.Model.StudyTopic.Id
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: TopicBites.Model.StudyTopic.Title*
+  commentId: Overload:TopicBites.Model.StudyTopic.Title
+  href: TopicBites.Model.StudyTopic.html#TopicBites_Model_StudyTopic_Title
+  name: Title
+  nameWithType: StudyTopic.Title
+  fullName: TopicBites.Model.StudyTopic.Title
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: TopicBites.Model.StudyTopic.Content*
+  commentId: Overload:TopicBites.Model.StudyTopic.Content
+  href: TopicBites.Model.StudyTopic.html#TopicBites_Model_StudyTopic_Content
+  name: Content
+  nameWithType: StudyTopic.Content
+  fullName: TopicBites.Model.StudyTopic.Content
+- uid: System.Collections.ObjectModel.ObservableCollection{TopicBites.Model.ContentBlocks.ContentBlock}
+  commentId: T:System.Collections.ObjectModel.ObservableCollection{TopicBites.Model.ContentBlocks.ContentBlock}
+  parent: System.Collections.ObjectModel
+  definition: System.Collections.ObjectModel.ObservableCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  name: ObservableCollection<ContentBlock>
+  nameWithType: ObservableCollection<ContentBlock>
+  fullName: System.Collections.ObjectModel.ObservableCollection<TopicBites.Model.ContentBlocks.ContentBlock>
+  nameWithType.vb: ObservableCollection(Of ContentBlock)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of TopicBites.Model.ContentBlocks.ContentBlock)
+  name.vb: ObservableCollection(Of ContentBlock)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: <
+  - uid: TopicBites.Model.ContentBlocks.ContentBlock
+    name: ContentBlock
+    href: TopicBites.Model.ContentBlocks.ContentBlock.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: TopicBites.Model.ContentBlocks.ContentBlock
+    name: ContentBlock
+    href: TopicBites.Model.ContentBlocks.ContentBlock.html
+  - name: )
+- uid: System.Collections.ObjectModel.ObservableCollection`1
+  commentId: T:System.Collections.ObjectModel.ObservableCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  name: ObservableCollection<T>
+  nameWithType: ObservableCollection<T>
+  fullName: System.Collections.ObjectModel.ObservableCollection<T>
+  nameWithType.vb: ObservableCollection(Of T)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of T)
+  name.vb: ObservableCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.ObjectModel
+  commentId: N:System.Collections.ObjectModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.ObjectModel
+  nameWithType: System.Collections.ObjectModel
+  fullName: System.Collections.ObjectModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel
+- uid: TopicBites.Model.StudyTopic.#ctor*
+  commentId: Overload:TopicBites.Model.StudyTopic.#ctor
+  href: TopicBites.Model.StudyTopic.html#TopicBites_Model_StudyTopic__ctor
+  name: StudyTopic
+  nameWithType: StudyTopic.StudyTopic
+  fullName: TopicBites.Model.StudyTopic.StudyTopic
+  nameWithType.vb: StudyTopic.New
+  fullName.vb: TopicBites.Model.StudyTopic.New
+  name.vb: New
+- uid: TopicBites.Model.StudyTopic.AddContentBlock*
+  commentId: Overload:TopicBites.Model.StudyTopic.AddContentBlock
+  href: TopicBites.Model.StudyTopic.html#TopicBites_Model_StudyTopic_AddContentBlock_TopicBites_Model_ContentBlocks_ContentBlock_
+  name: AddContentBlock
+  nameWithType: StudyTopic.AddContentBlock
+  fullName: TopicBites.Model.StudyTopic.AddContentBlock
+- uid: TopicBites.Model.ContentBlocks.ContentBlock
+  commentId: T:TopicBites.Model.ContentBlocks.ContentBlock
+  parent: TopicBites.Model.ContentBlocks
+  href: TopicBites.Model.ContentBlocks.ContentBlock.html
+  name: ContentBlock
+  nameWithType: ContentBlock
+  fullName: TopicBites.Model.ContentBlocks.ContentBlock
+- uid: TopicBites.Model.ContentBlocks
+  commentId: N:TopicBites.Model.ContentBlocks
+  href: TopicBites.html
+  name: TopicBites.Model.ContentBlocks
+  nameWithType: TopicBites.Model.ContentBlocks
+  fullName: TopicBites.Model.ContentBlocks
+  spec.csharp:
+  - uid: TopicBites
+    name: TopicBites
+    href: TopicBites.html
+  - name: .
+  - uid: TopicBites.Model
+    name: Model
+    href: TopicBites.Model.html
+  - name: .
+  - uid: TopicBites.Model.ContentBlocks
+    name: ContentBlocks
+    href: TopicBites.Model.ContentBlocks.html
+  spec.vb:
+  - uid: TopicBites
+    name: TopicBites
+    href: TopicBites.html
+  - name: .
+  - uid: TopicBites.Model
+    name: Model
+    href: TopicBites.Model.html
+  - name: .
+  - uid: TopicBites.Model.ContentBlocks
+    name: ContentBlocks
+    href: TopicBites.Model.ContentBlocks.html

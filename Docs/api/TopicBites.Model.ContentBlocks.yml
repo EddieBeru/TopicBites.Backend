@@ -1,0 +1,68 @@
+### YamlMime:ManagedReference
+items:
+- uid: TopicBites.Model.ContentBlocks
+  commentId: N:TopicBites.Model.ContentBlocks
+  id: TopicBites.Model.ContentBlocks
+  children:
+  - TopicBites.Model.ContentBlocks.ContentBlock
+  - TopicBites.Model.ContentBlocks.ImageBlock
+  - TopicBites.Model.ContentBlocks.TextBlock
+  langs:
+  - csharp
+  - vb
+  name: TopicBites.Model.ContentBlocks
+  nameWithType: TopicBites.Model.ContentBlocks
+  fullName: TopicBites.Model.ContentBlocks
+  type: Namespace
+  assemblies:
+  - TopicBites
+references:
+- uid: TopicBites.Model.ContentBlocks.ContentBlock
+  commentId: T:TopicBites.Model.ContentBlocks.ContentBlock
+  parent: TopicBites.Model.ContentBlocks
+  href: TopicBites.Model.ContentBlocks.ContentBlock.html
+  name: ContentBlock
+  nameWithType: ContentBlock
+  fullName: TopicBites.Model.ContentBlocks.ContentBlock
+- uid: TopicBites.Model.ContentBlocks.ImageBlock
+  commentId: T:TopicBites.Model.ContentBlocks.ImageBlock
+  href: TopicBites.Model.ContentBlocks.ImageBlock.html
+  name: ImageBlock
+  nameWithType: ImageBlock
+  fullName: TopicBites.Model.ContentBlocks.ImageBlock
+- uid: TopicBites.Model.ContentBlocks.TextBlock
+  commentId: T:TopicBites.Model.ContentBlocks.TextBlock
+  href: TopicBites.Model.ContentBlocks.TextBlock.html
+  name: TextBlock
+  nameWithType: TextBlock
+  fullName: TopicBites.Model.ContentBlocks.TextBlock
+- uid: TopicBites.Model.ContentBlocks
+  commentId: N:TopicBites.Model.ContentBlocks
+  href: TopicBites.html
+  name: TopicBites.Model.ContentBlocks
+  nameWithType: TopicBites.Model.ContentBlocks
+  fullName: TopicBites.Model.ContentBlocks
+  spec.csharp:
+  - uid: TopicBites
+    name: TopicBites
+    href: TopicBites.html
+  - name: .
+  - uid: TopicBites.Model
+    name: Model
+    href: TopicBites.Model.html
+  - name: .
+  - uid: TopicBites.Model.ContentBlocks
+    name: ContentBlocks
+    href: TopicBites.Model.ContentBlocks.html
+  spec.vb:
+  - uid: TopicBites
+    name: TopicBites
+    href: TopicBites.html
+  - name: .
+  - uid: TopicBites.Model
+    name: Model
+    href: TopicBites.Model.html
+  - name: .
+  - uid: TopicBites.Model.ContentBlocks
+    name: ContentBlocks
+    href: TopicBites.Model.ContentBlocks.html

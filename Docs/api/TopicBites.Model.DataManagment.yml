@@ -1,0 +1,62 @@
+### YamlMime:ManagedReference
+items:
+- uid: TopicBites.Model.DataManagment
+  commentId: N:TopicBites.Model.DataManagment
+  id: TopicBites.Model.DataManagment
+  children:
+  - TopicBites.Model.DataManagment.Database
+  - TopicBites.Model.DataManagment.UIDManager
+  langs:
+  - csharp
+  - vb
+  name: TopicBites.Model.DataManagment
+  nameWithType: TopicBites.Model.DataManagment
+  fullName: TopicBites.Model.DataManagment
+  type: Namespace
+  assemblies:
+  - TopicBites
+references:
+- uid: TopicBites.Model.DataManagment.Database
+  commentId: T:TopicBites.Model.DataManagment.Database
+  parent: TopicBites.Model.DataManagment
+  href: TopicBites.Model.DataManagment.Database.html
+  name: Database
+  nameWithType: Database
+  fullName: TopicBites.Model.DataManagment.Database
+- uid: TopicBites.Model.DataManagment.UIDManager
+  commentId: T:TopicBites.Model.DataManagment.UIDManager
+  parent: TopicBites.Model.DataManagment
+  href: TopicBites.Model.DataManagment.UIDManager.html
+  name: UIDManager
+  nameWithType: UIDManager
+  fullName: TopicBites.Model.DataManagment.UIDManager
+- uid: TopicBites.Model.DataManagment
+  commentId: N:TopicBites.Model.DataManagment
+  href: TopicBites.html
+  name: TopicBites.Model.DataManagment
+  nameWithType: TopicBites.Model.DataManagment
+  fullName: TopicBites.Model.DataManagment
+  spec.csharp:
+  - uid: TopicBites
+    name: TopicBites
+    href: TopicBites.html
+  - name: .
+  - uid: TopicBites.Model
+    name: Model
+    href: TopicBites.Model.html
+  - name: .
+  - uid: TopicBites.Model.DataManagment
+    name: DataManagment
+    href: TopicBites.Model.DataManagment.html
+  spec.vb:
+  - uid: TopicBites
+    name: TopicBites
+    href: TopicBites.html
+  - name: .
+  - uid: TopicBites.Model
+    name: Model
+    href: TopicBites.Model.html
+  - name: .
+  - uid: TopicBites.Model.DataManagment
+    name: DataManagment
+    href: TopicBites.Model.DataManagment.html
