@@ -34,7 +34,7 @@ jobs:
     - run: dotnet tool update -g docfx
     - run: docfx Docs/docfx.json
     - name: List contents of Docs/_site
-    - run: ls -l Docs/_site
+      run: ls -l Docs/_site
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
