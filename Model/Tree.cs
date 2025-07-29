@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 using TopicBites.Model.DataManagment;
@@ -20,6 +21,8 @@ namespace TopicBites.Model
         public StudyTopic? Item => GetItem();
         [JsonIgnore]
         public Tree? Parent => GetParent();
+        [JsonIgnore]
+        Database? databaseInstance;
         [JsonConstructor]
         internal Tree(int ParentId, int ItemId, List<Tree> Children)
         {
@@ -71,8 +74,16 @@ namespace TopicBites.Model
             }
             return current;
         }
-        public StudyTopic? GetItem() => DataBase.GetInstance().Value.GetStudyTopicById(ItemId);
-        public Tree? GetParent() => DataBase.GetInstance().Value.GetTree(ParentId);
+        public void AssignDatabaseInstance(Database database)
+        {
+            databaseInstance = database;
+            foreach (var child in Children)
+            {
+                child.AssignDatabaseInstance(database);
+            }
+        }
+        public StudyTopic? GetItem() => databaseInstance == null ? null : databaseInstance.GetStudyTopicById(ItemId);
+        public Tree? GetParent() => databaseInstance == null ? null : databaseInstance.GetTree(ParentId);
         public string GetAddress()
         {
             return (Parent == null || Parent.ItemId == -1) ? $"{ItemId}" : $"{Parent.GetAddress()}/{ItemId}";

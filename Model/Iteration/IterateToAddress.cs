@@ -12,10 +12,11 @@ namespace TopicBites.Model.Iteration
         string _address;
         string[] _splitAddress;
         string _nextStep;
+        Database data;
         Tree? _current;
         public IterateToAddress(string address) { 
             _address = address; 
-            _current = DataBase.GetInstance().Value.GetMainTree();
+            _current = data.GetMainTree();
             _splitAddress = address.Split('/');
             if (_splitAddress.Length > 0)
             {

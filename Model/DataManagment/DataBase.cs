@@ -6,24 +6,15 @@ using System.Threading.Tasks;
 
 namespace TopicBites.Model.DataManagment
 {
-    public class DataBase
+    public class Database
     {
-        private List<StudyTopic> StudyTopics { get; set; } = new List<StudyTopic>();
-        private Tree MainTree { get; set; } = new Tree(-1, -1); // Root node with itemId -1
+        private List<StudyTopic> StudyTopics { get; set; }
+        private Tree MainTree { get; set; } // Root node with itemId -1
 
-        private static readonly Lazy<DataBase> _lazyInstance = new Lazy<DataBase>(() => new DataBase());
-        private DataBase()
+        public Database(List<StudyTopic>? studyTopics, Tree? tree)
         {
-            
-        }
-        public static Lazy<DataBase> GetInstance()
-        {
-            return _lazyInstance;
-        }
-        public void Configure(Tree newTree, List<StudyTopic> topics)
-        {
-            MainTree = newTree;
-            StudyTopics = topics;
+            StudyTopics = studyTopics ?? new List<StudyTopic>();
+            MainTree = tree ?? new Tree(-1, -1); // Ensure MainTree is initialized
         }
         public void AddStudyTopic(StudyTopic topic, string address)
         {
