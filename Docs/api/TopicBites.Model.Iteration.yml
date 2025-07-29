@@ -1,0 +1,61 @@
+### YamlMime:ManagedReference
+items:
+- uid: TopicBites.Model.Iteration
+  commentId: N:TopicBites.Model.Iteration
+  id: TopicBites.Model.Iteration
+  children:
+  - TopicBites.Model.Iteration.IterateToAddress
+  - TopicBites.Model.Iteration.Iteration
+  langs:
+  - csharp
+  - vb
+  name: TopicBites.Model.Iteration
+  nameWithType: TopicBites.Model.Iteration
+  fullName: TopicBites.Model.Iteration
+  type: Namespace
+  assemblies:
+  - TopicBites
+references:
+- uid: TopicBites.Model.Iteration.IterateToAddress
+  commentId: T:TopicBites.Model.Iteration.IterateToAddress
+  href: TopicBites.Model.Iteration.IterateToAddress.html
+  name: IterateToAddress
+  nameWithType: IterateToAddress
+  fullName: TopicBites.Model.Iteration.IterateToAddress
+- uid: TopicBites.Model.Iteration.Iteration
+  commentId: T:TopicBites.Model.Iteration.Iteration
+  parent: TopicBites.Model.Iteration
+  href: TopicBites.Model.Iteration.Iteration.html
+  name: Iteration
+  nameWithType: Iteration
+  fullName: TopicBites.Model.Iteration.Iteration
+- uid: TopicBites.Model.Iteration
+  commentId: N:TopicBites.Model.Iteration
+  href: TopicBites.html
+  name: TopicBites.Model.Iteration
+  nameWithType: TopicBites.Model.Iteration
+  fullName: TopicBites.Model.Iteration
+  spec.csharp:
+  - uid: TopicBites
+    name: TopicBites
+    href: TopicBites.html
+  - name: .
+  - uid: TopicBites.Model
+    name: Model
+    href: TopicBites.Model.html
+  - name: .
+  - uid: TopicBites.Model.Iteration
+    name: Iteration
+    href: TopicBites.Model.Iteration.html
+  spec.vb:
+  - uid: TopicBites
+    name: TopicBites
+    href: TopicBites.html
+  - name: .
+  - uid: TopicBites.Model
+    name: Model
+    href: TopicBites.Model.html
+  - name: .
+  - uid: TopicBites.Model.Iteration
+    name: Iteration
+    href: TopicBites.Model.Iteration.html

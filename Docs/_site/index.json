@@ -1,0 +1,82 @@
+{
+  "api/TopicBites.Model.ContentBlocks.ContentBlock.html": {
+    "href": "api/TopicBites.Model.ContentBlocks.ContentBlock.html",
+    "title": "Class ContentBlock | Topic Bites Docs",
+    "summary": "Class ContentBlock Namespace TopicBites.Model.ContentBlocks Assembly TopicBites.dll public abstract class ContentBlock Inheritance object ContentBlock Derived ImageBlock TextBlock Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Properties DisplayType [JsonIgnore] public abstract string DisplayType { get; } Property Value string Title public abstract string Title { get; protected set; } Property Value string Type public abstract string Type { get; } Property Value string"
+  },
+  "api/TopicBites.Model.ContentBlocks.ImageBlock.html": {
+    "href": "api/TopicBites.Model.ContentBlocks.ImageBlock.html",
+    "title": "Class ImageBlock | Topic Bites Docs",
+    "summary": "Class ImageBlock Namespace TopicBites.Model.ContentBlocks Assembly TopicBites.dll public class ImageBlock : ContentBlock Inheritance object ContentBlock ImageBlock Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors ImageBlock() public ImageBlock() ImageBlock(Uri, string) public ImageBlock(Uri imageUrl, string altText) Parameters imageUrl Uri altText string Properties AltText public string AltText { get; set; } Property Value string DisplayType public override string DisplayType { get; } Property Value string ImageUrl public Uri ImageUrl { get; set; } Property Value Uri Title public override string Title { get; protected set; } Property Value string Type public override string Type { get; } Property Value string"
+  },
+  "api/TopicBites.Model.ContentBlocks.TextBlock.html": {
+    "href": "api/TopicBites.Model.ContentBlocks.TextBlock.html",
+    "title": "Class TextBlock | Topic Bites Docs",
+    "summary": "Class TextBlock Namespace TopicBites.Model.ContentBlocks Assembly TopicBites.dll public class TextBlock : ContentBlock Inheritance object ContentBlock TextBlock Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors TextBlock() public TextBlock() TextBlock(string, string) public TextBlock(string title, string text) Parameters title string text string Properties DisplayType public override string DisplayType { get; } Property Value string Text public string Text { get; set; } Property Value string Title public override string Title { get; protected set; } Property Value string Type public override string Type { get; } Property Value string"
+  },
+  "api/TopicBites.Model.ContentBlocks.html": {
+    "href": "api/TopicBites.Model.ContentBlocks.html",
+    "title": "Namespace TopicBites.Model.ContentBlocks | Topic Bites Docs",
+    "summary": "Namespace TopicBites.Model.ContentBlocks Classes ContentBlock ImageBlock TextBlock"
+  },
+  "api/TopicBites.Model.DataManagment.Database.html": {
+    "href": "api/TopicBites.Model.DataManagment.Database.html",
+    "title": "Class Database | Topic Bites Docs",
+    "summary": "Class Database Namespace TopicBites.Model.DataManagment Assembly TopicBites.dll public class Database Inheritance object Database Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors Database(List<StudyTopic>?, Tree?) public Database(List<StudyTopic>? studyTopics, Tree? tree) Parameters studyTopics List<StudyTopic> tree Tree Methods AddStudyTopic(StudyTopic, string) public void AddStudyTopic(StudyTopic topic, string address) Parameters topic StudyTopic address string AsignStudyTopicAsChildren(int, int) public void AsignStudyTopicAsChildren(int topicId, int childId) Parameters topicId int childId int GetAddressOfTopic(StudyTopic) public string GetAddressOfTopic(StudyTopic topic) Parameters topic StudyTopic Returns string GetAllStudyTopics() public List<StudyTopic> GetAllStudyTopics() Returns List<StudyTopic> GetMainTree() public Tree GetMainTree() Returns Tree GetStudyTopicById(int) public StudyTopic? GetStudyTopicById(int id) Parameters id int Returns StudyTopic GetTree(int) public Tree? GetTree(int id) Parameters id int Returns Tree RemoveStudyTopic(int, string) public void RemoveStudyTopic(int id, string address) Parameters id int address string"
+  },
+  "api/TopicBites.Model.DataManagment.UIDManager.html": {
+    "href": "api/TopicBites.Model.DataManagment.UIDManager.html",
+    "title": "Class UIDManager | Topic Bites Docs",
+    "summary": "Class UIDManager Namespace TopicBites.Model.DataManagment Assembly TopicBites.dll public class UIDManager Inheritance object UIDManager Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods AddUnusedId(int) public void AddUnusedId(int id) Parameters id int GetInstance() public static UIDManager GetInstance() Returns UIDManager GetNewId() public int GetNewId() Returns int"
+  },
+  "api/TopicBites.Model.DataManagment.html": {
+    "href": "api/TopicBites.Model.DataManagment.html",
+    "title": "Namespace TopicBites.Model.DataManagment | Topic Bites Docs",
+    "summary": "Namespace TopicBites.Model.DataManagment Classes Database UIDManager"
+  },
+  "api/TopicBites.Model.Iteration.IterateToAddress.html": {
+    "href": "api/TopicBites.Model.Iteration.IterateToAddress.html",
+    "title": "Class IterateToAddress | Topic Bites Docs",
+    "summary": "Class IterateToAddress Namespace TopicBites.Model.Iteration Assembly TopicBites.dll public class IterateToAddress : Iteration Inheritance object Iteration IterateToAddress Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors IterateToAddress(string) public IterateToAddress(string address) Parameters address string Methods Current() public override StudyTopic? Current() Returns StudyTopic IsNext() public override bool IsNext() Returns bool Next() public override void Next()"
+  },
+  "api/TopicBites.Model.Iteration.Iteration.html": {
+    "href": "api/TopicBites.Model.Iteration.Iteration.html",
+    "title": "Class Iteration | Topic Bites Docs",
+    "summary": "Class Iteration Namespace TopicBites.Model.Iteration Assembly TopicBites.dll public abstract class Iteration Inheritance object Iteration Derived IterateToAddress Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods Current() public abstract StudyTopic Current() Returns StudyTopic IsNext() public abstract bool IsNext() Returns bool Next() public abstract void Next()"
+  },
+  "api/TopicBites.Model.Iteration.html": {
+    "href": "api/TopicBites.Model.Iteration.html",
+    "title": "Namespace TopicBites.Model.Iteration | Topic Bites Docs",
+    "summary": "Namespace TopicBites.Model.Iteration Classes IterateToAddress Iteration"
+  },
+  "api/TopicBites.Model.StudyTopic.html": {
+    "href": "api/TopicBites.Model.StudyTopic.html",
+    "title": "Class StudyTopic | Topic Bites Docs",
+    "summary": "Class StudyTopic Namespace TopicBites.Model Assembly TopicBites.dll public class StudyTopic Inheritance object StudyTopic Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors StudyTopic() public StudyTopic() StudyTopic(string) public StudyTopic(string title) Parameters title string Properties Content public ObservableCollection<ContentBlock> Content { get; protected set; } Property Value ObservableCollection<ContentBlock> Id public int Id { get; protected set; } Property Value int Title public string Title { get; protected set; } Property Value string Methods AddContentBlock(ContentBlock) public void AddContentBlock(ContentBlock contentBlock) Parameters contentBlock ContentBlock"
+  },
+  "api/TopicBites.Model.Tree.html": {
+    "href": "api/TopicBites.Model.Tree.html",
+    "title": "Class Tree | Topic Bites Docs",
+    "summary": "Class Tree Namespace TopicBites.Model Assembly TopicBites.dll public class Tree Inheritance object Tree Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors Tree(int, int) public Tree(int itemId, int parentId = -1) Parameters itemId int parentId int Tree(int, Tree?) public Tree(int itemId, Tree? parent = null) Parameters itemId int parent Tree Properties Children public List<Tree> Children { get; set; } Property Value List<Tree> Item [JsonIgnore] public StudyTopic? Item { get; } Property Value StudyTopic ItemId public int ItemId { get; set; } Property Value int Parent [JsonIgnore] public Tree? Parent { get; } Property Value Tree ParentId public int ParentId { get; set; } Property Value int Methods AddChild(Tree) public void AddChild(Tree child) Parameters child Tree AssignDatabaseInstance(Database) public void AssignDatabaseInstance(Database database) Parameters database Database GetAddress() public string GetAddress() Returns string GetItem() public StudyTopic? GetItem() Returns StudyTopic GetParent() public Tree? GetParent() Returns Tree LookForStudyTopic(int) public Tree? LookForStudyTopic(int id) Parameters id int Returns Tree NavigateDown(int) public Tree? NavigateDown(int id) Parameters id int Returns Tree NavigateToAddress(string) public Tree? NavigateToAddress(string address) Parameters address string Returns Tree NavigateUp() public Tree? NavigateUp() Returns Tree RemoveChild(int) public void RemoveChild(int id) Parameters id int"
+  },
+  "api/TopicBites.Model.html": {
+    "href": "api/TopicBites.Model.html",
+    "title": "Namespace TopicBites.Model | Topic Bites Docs",
+    "summary": "Namespace TopicBites.Model Classes StudyTopic Tree"
+  },
+  "docs/getting-started.html": {
+    "href": "docs/getting-started.html",
+    "title": "Getting Started | Topic Bites Docs",
+    "summary": "Getting Started"
+  },
+  "docs/introduction.html": {
+    "href": "docs/introduction.html",
+    "title": "Introduction | Topic Bites Docs",
+    "summary": "Introduction"
+  },
+  "index.html": {
+    "href": "index.html",
+    "title": "This is the HOMEPAGE. | Topic Bites Docs",
+    "summary": "This is the HOMEPAGE. Refer to Markdown for how to write markdown files. Quick Start Notes: Add images to the images folder if the file is referencing an image."
+  }
+}

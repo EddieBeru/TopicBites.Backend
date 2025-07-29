@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: TopicBites.Model
+  commentId: N:TopicBites.Model
+  id: TopicBites.Model
+  children:
+  - TopicBites.Model.StudyTopic
+  - TopicBites.Model.Tree
+  langs:
+  - csharp
+  - vb
+  name: TopicBites.Model
+  nameWithType: TopicBites.Model
+  fullName: TopicBites.Model
+  type: Namespace
+  assemblies:
+  - TopicBites
+references:
+- uid: TopicBites.Model.StudyTopic
+  commentId: T:TopicBites.Model.StudyTopic
+  parent: TopicBites.Model
+  href: TopicBites.Model.StudyTopic.html
+  name: StudyTopic
+  nameWithType: StudyTopic
+  fullName: TopicBites.Model.StudyTopic
+- uid: TopicBites.Model.Tree
+  commentId: T:TopicBites.Model.Tree
+  parent: TopicBites.Model
+  href: TopicBites.Model.Tree.html
+  name: Tree
+  nameWithType: Tree
+  fullName: TopicBites.Model.Tree
+- uid: TopicBites.Model
+  commentId: N:TopicBites.Model
+  href: TopicBites.html
+  name: TopicBites.Model
+  nameWithType: TopicBites.Model
+  fullName: TopicBites.Model
+  spec.csharp:
+  - uid: TopicBites
+    name: TopicBites
+    href: TopicBites.html
+  - name: .
+  - uid: TopicBites.Model
+    name: Model
+    href: TopicBites.Model.html
+  spec.vb:
+  - uid: TopicBites
+    name: TopicBites
+    href: TopicBites.html
+  - name: .
+  - uid: TopicBites.Model
+    name: Model
+    href: TopicBites.Model.html
